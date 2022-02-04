@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 /*
-                                *ngFor Directive in Angular
+                                Date and Time Difference in Angular
 ==> app.component.html
 
 <input type="date" name="start-date" [(ngModel)]="startDate" > <br> <br>
