@@ -1,0 +1,10 @@
+<h1>*ngIf Directive in Angular</h1>
+<div *ngIf="myArr else notArry">
+    <h4>Array is Present</h4>
+    <!-- <ul>
+        <li *ngFor="let my of myArr;">{{my}}</li>
+    </ul> -->
+</div>
+<ng-template #notArry>
+    <h4>Array is not Present</h4>
+</ng-template>
