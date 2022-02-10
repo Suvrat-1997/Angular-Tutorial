@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
                             Template Driven Form in Angular
 
 
-When we talking about template driven form, name attribute must be need and ngModel is used bind the data.
+When we talking about template driven form, name attribute must be need and ngModel is used to bind the data.
 
 
 ==> app.module.ts
