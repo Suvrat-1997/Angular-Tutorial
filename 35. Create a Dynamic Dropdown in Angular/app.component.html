@@ -1,0 +1,7 @@
+<h1>Create a Dynamic Dropdown in Angular</h1>
+<form>
+<select name="days" id="days">
+    <option disabled selected>Select Days</option>
+    <option value="{{dy}}" *ngFor="let dy of days">{{dy}}</option>
+</select>
+</form>
