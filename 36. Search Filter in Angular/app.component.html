@@ -1,0 +1,22 @@
+<h1>Search Filter in Angular</h1>
+
+<input type="search" placeholder="Search" [(ngModel)]="filterTerm">
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usr of userList | filter: filterTerm; let i = index;">
+            <td>{{i+1}}</td>
+            <td>{{usr.name}}</td>
+            <td>{{usr.age}}</td>
+            <td>{{usr.addr}}</td>
+        </tr>
+    </tbody>
+</table>
