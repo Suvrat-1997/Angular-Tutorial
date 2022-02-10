@@ -1,0 +1,24 @@
+<h1>*ngFor in Angular</h1>
+
+<h4 *ngFor="let item of _data">
+    {{item}}
+</h4>
+
+<h4 *ngFor="let prf of profile;" style="background-color: cadetblue;">
+    {{prf.name}}
+    {{prf.age}}
+    {{prf.addr}}
+</h4>
+
+<table>
+    <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+    </tr>
+    <tr *ngFor="let pr of profile;">
+        <td>{{pr.name}}</td>
+        <td>{{pr.age}}</td>
+        <td>{{pr.addr}}</td>
+    </tr>
+</table>
