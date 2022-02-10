@@ -47,8 +47,6 @@ imports: [
 })
 export class AppComponent {
   title = 'AngularProject';
-  colr = true;
-  // colr = false;
 
 }
 
