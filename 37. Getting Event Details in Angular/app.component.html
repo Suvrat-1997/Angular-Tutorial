@@ -1,0 +1,8 @@
+<h1>Getting Event Details in Angular</h1>
+
+<select name="user" (change)="changeUser($event)">
+    <option selected disabled>Select User</option>
+    <option value="{{usr}}" *ngFor="let usr of userList;">{{usr}}</option>
+</select> <br> <br>
+
+<button type="button" (click)="myFun($event)">Click Me</button>
