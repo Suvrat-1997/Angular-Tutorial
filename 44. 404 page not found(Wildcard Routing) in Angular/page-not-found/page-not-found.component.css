@@ -1,0 +1,13 @@
+h1{
+    color: red;
+    margin-top: 50vh;
+    margin-left: 40vw;
+}
+h1::before{
+    content: '\00A4';
+    margin-right: 20px;
+}
+h1::after{
+    content: '\00A4';
+    margin-left: 20px;
+}
