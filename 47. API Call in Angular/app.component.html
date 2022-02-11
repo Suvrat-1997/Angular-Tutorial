@@ -1,0 +1,20 @@
+<h1>Api Call in Angular</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prf of profile; let i=index;">
+            <td>{{prf.id}}</td>
+            <td>{{prf.name}}</td>
+            <td>{{prf.age}}</td>
+            <td>{{prf.address}}</td>
+        </tr>
+    </tbody>
+</table>

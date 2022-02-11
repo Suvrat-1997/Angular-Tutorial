@@ -1,0 +1,22 @@
+{
+  "userList": [
+    {
+      "id": 100,
+      "name": "Shuvasis",
+      "age": "24",
+      "address": "PKU"
+    },
+    {
+      "id": 101,
+      "name": "Saheb",
+      "age": "23",
+      "address": "BCK"
+    },
+    {
+      "id": 102,
+      "name": "Dhiren",
+      "age": "21",
+      "address": "MDN"
+    }
+  ]
+}
