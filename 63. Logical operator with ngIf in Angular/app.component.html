@@ -1,0 +1,9 @@
+<h1>Logical operator with *ngIf in Angular</h1>
+
+<div *ngIf="isLoggedIn && userType === 'admin' ">
+  <h2>Logged user using AND operator</h2>
+</div>
+
+<div *ngIf="isLoggedIn || userType === 'Admin'">
+  <h2>Logged user using OR operator</h2>
+</div>
