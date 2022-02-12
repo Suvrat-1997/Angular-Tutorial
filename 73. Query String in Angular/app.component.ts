@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 /*
 
-                          Router with Query String in Angular
+                          Query String in Angular
 
 ==> pass in url
 
