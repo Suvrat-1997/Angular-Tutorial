@@ -1,0 +1,11 @@
+<h1>Redirecting the Router to Anoter Router using Button Click in Angular</h1>
+
+<nav>
+  <ul>
+    <li> <a routerLink="admin/student">Student</a></li>
+    <li> <a routerLink="admin/teacher">Teacher</a></li>
+  </ul>
+</nav>
+
+<button (click)="goTo()">Go to Another Page</button>
+<router-outlet></router-outlet>

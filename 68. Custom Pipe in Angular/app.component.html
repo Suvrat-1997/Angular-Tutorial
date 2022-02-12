@@ -1,0 +1,18 @@
+<h1>Custom Pipe in Angular</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employee; let i=index;">
+      <td>{{i+1}}</td>
+      <td>{{emp.name | cutomPipe: emp.gender}}</td>
+      <td>{{emp.age}}</td>
+    </tr>
+  </tbody>
+</table>

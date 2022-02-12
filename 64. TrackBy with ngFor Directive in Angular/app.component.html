@@ -1,0 +1,22 @@
+<h1>TrackBy with *ngFor Directive in Angular</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employee; let i=index; trackBy: getEmployeeMoreData">
+      <td>{{i+1}}</td>
+      <td>{{emp.name}}</td>
+      <td>{{emp.age}}</td>
+      <td>{{emp.email}}</td>
+    </tr>
+  </tbody>
+</table>
+<br><br>
+<button type="button" (click)="loadMoreEmployee()">Load More Data</button>
