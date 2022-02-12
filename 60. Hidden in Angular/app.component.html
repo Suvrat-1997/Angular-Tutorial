@@ -1,0 +1,15 @@
+<h1>[hidden] in Angular</h1>
+
+<!-- <ng-template [ngIf]="isShow" [ngIfElse]="logout">
+  <h2>Logged User</h2>
+</ng-template>
+<ng-template #logout>
+<h2>New User</h2>
+</ng-template> -->
+
+<div [hidden]="isShow">
+  <h2>Logged User</h2>
+</div>
+<div [hidden]="!isShow">
+  <h2>New User</h2>
+</div>
