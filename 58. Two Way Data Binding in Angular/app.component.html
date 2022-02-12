@@ -1,0 +1,11 @@
+<h1>Two-way Data Binding in Angular</h1>
+
+<form #loginForm="ngForm" (ngSubmit)="getValue(loginForm.value)">
+    <input type="text" name="userName" placeholder="Enter name..." [ngModel]="customerData['name']" #name="ngModel" required> <br> 
+    <span class="red-error" *ngIf="name?.invalid && name?.touched">**Name is required</span> <br>
+    <input type="text" name="age" placeholder="Enter age..." [ngModel]="customerData['age']"> <br> <br>
+    <input type="text" name="mobile" placeholder="Enter mobile number..." [ngModel]="customerData['mobile']" #phone="ngModel" required> <br>
+    <span class="red-error" *ngIf="phone?.invalid && phone?.touched">**Phone No. is required</span> <br>
+    <input type="text" name="address" placeholder="Enter address..." [ngModel]="customerData['address']"> <br> <br>
+    <input type="submit">
+</form>

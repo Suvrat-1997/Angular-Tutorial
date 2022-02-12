@@ -1,0 +1,9 @@
+<h1>Template Driven Forms in Angular</h1>
+
+<form #userForm="ngForm" (ngSubmit)="getUser(userForm.value)">
+    <input type="text" name="userName" placeholder="Enter name..." ngModel> <br> <br>
+    <input type="text" name="age" placeholder="Enter age..." ngModel> <br> <br>
+    <input type="text" name="mobile" placeholder="Enter mobile number..." ngModel> <br> <br>
+    <input type="text" name="address" placeholder="Enter address..." ngModel> <br> <br>
+    <input type="submit">
+</form>

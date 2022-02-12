@@ -1,0 +1,11 @@
+<h1>Reactive Forms in Angular</h1>
+
+<form [formGroup]="loginForm" (ngSubmit)="getValue()">
+    <input type="text" placeholder="Enter name..." formControlName="name"> <br> 
+    <span class="red-error" *ngIf="username?.invalid && username?.touched">**Name is required</span> <br>
+    <input type="text" name="age" placeholder="Enter age..." formControlName="age"> <br> <br>
+    <input type="text" name="mobile" placeholder="Enter mobile number..." formControlName="mobile"> <br>
+    <span class="red-error" *ngIf="loginForm.get('mobile')?.invalid && loginForm.get('mobile')?.touched">**Phone No. is required</span> <br>
+    <input type="text" name="address" placeholder="Enter address..." formControlName="addr"> <br> <br>
+    <input type="submit">
+</form>
