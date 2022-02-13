@@ -1,0 +1,10 @@
+<h1>Reactive Form Validators in Angular</h1>
+
+<form [formGroup]="userForm">
+    <input type="text" placeholder="Enter Name..." formControlName="username"> <br> <br>
+    <input type="email" placeholder="Enter Email..." formControlName="email"> <br><br>
+    <input type="text" placeholder="Enter Salary..." formControlName="salary"> <br> <br>
+    <input type="submit" (click)="getValue()" [disabled]="!userForm.valid"> &nbsp; &nbsp;
+    <input type="submit" value="Set Value" (click)="valueSet()">
+</form>
+
