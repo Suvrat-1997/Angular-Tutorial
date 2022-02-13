@@ -1,0 +1,11 @@
+<h1>Template Driven Forms Validation in Angular</h1>
+
+<form #contactForm="ngForm" (ngSubmit)="getValue(contactForm.value); contactForm.reset();">
+    <input type="text" name="username" ngModel required placeholder="Enter Name..." #yourName="ngModel"> <br>
+    <span class="err-msg" *ngIf="yourName.invalid && yourName.touched">**Please Enter Your Name!!</span> <br>
+    <input type="text" name="age" ngModel required placeholder="Enter Age..."> <br><br>
+    <input type="text" name="salary" ngModel required placeholder="Enter Salary..." #sal="ngModel"> <br>
+    <span class="err-msg" *ngIf="sal.invalid && sal.touched">**Please Enter Salary!!</span> <br>
+    <input type="submit" [disabled]="!contactForm.valid">
+</form>
+
