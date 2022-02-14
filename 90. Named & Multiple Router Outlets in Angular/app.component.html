@@ -1,0 +1,13 @@
+<h1>Named & Multiple Router Outlets in Angular</h1>
+
+<nav>
+    <ul>
+        <li><a routerLink="customer">Customer</a></li>
+        <li><a routerLink="order">Order</a></li>
+        <li><a [routerLink]="[{outlets:{customerList:['customer-list']}}]">Customer List</a></li>
+        <li><a [routerLink]="[{outlets:{orderList:['order-list']}}]">Order List</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
+<router-outlet name="customerList"></router-outlet>
+<router-outlet name="orderList"></router-outlet>
