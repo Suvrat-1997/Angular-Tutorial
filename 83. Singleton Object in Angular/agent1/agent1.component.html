@@ -1,0 +1,6 @@
+<h2>Agent1 Booking</h2>
+<input type="text" #agent1> &nbsp;
+<input type="submit" (click)="ticketBook(agent1.value)" value="Book Ticket">
+<ul>
+    <li *ngFor="let tckt of ticket1;">{{tckt}}</li>
+</ul>

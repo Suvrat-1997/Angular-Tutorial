@@ -1,0 +1,30 @@
+<h1>Service in Angular</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usr of userProfile; let i=index;">
+            <td>{{i+1}}</td>
+            <td>{{usr.name}}</td>
+            <td>{{usr.username}}</td>
+            <td>{{usr.email}}</td>
+            <td>{{usr.phone}}</td>
+            <td>{{usr.website}}</td>
+            <td>{{usr.company.name}}</td>
+            <td>{{usr.address.street}}, {{usr.address.city}}, {{usr.address.zipcode}}</td>
+        </tr>
+    </tbody>
+</table>
+
+ 
