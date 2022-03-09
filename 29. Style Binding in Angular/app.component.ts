@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
 <h3 [style.color]="colr" [style.backgroundColor]="bg" [style.width]="'200px'" [style.height]="'200px'">Header 1</h3> <br>
 <button type="button" (click)="updateColor()">Change Color</button>
 
+// [style.width.%]="width"
+// [style.height.px]="height"
+
 ==> app.component.ts
 
 bg = 'skyblue';
