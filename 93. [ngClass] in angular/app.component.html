@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <h1 class="text-center">ngClass in Angular</h1>
+    <div class="mt-3 border rounded shadow-lg w-50 mx-auto p-3">
+<!-- ----------------------------------------------------------------------------------- -->
+        <!-- Using ngClass as string -->
+        <h3 class="text-center">Using ngClass as string</h3>
+
+        <!-- Apply one class -->
+        <p [ngClass]="'one'">Using ngClass with string example</p>
+
+        <!-- Apply multiple class -->
+        <p [ngClass]="'two three four'">Using ngClass with string example</p>
+
+<!-- ----------------------------------------------------------------------------------- -->
+
+        <!-- Using ngClass with ngFor -->
+        <h3 class="text-center">Using ngClass with ngFor</h3>
+        <p *ngFor="let usr of users;" [ngClass]="'one two'">{{usr}}</p>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+        <!-- Using ngClass as array -->
+        <h3 class="text-center">Using ngClass as array</h3>
+        <p [ngClass]="['one', 'four', 'two']">Using ngClass with array example</p>
+
+<!-- ----------------------------------------------------------------------------------------- -->
+
+        <!-- Using ngClass as object -->
+        <h3 class="text-center">Using ngClass as object</h3>
+        <p [ngClass]="{'three': true, 'two': false}">Using ngClass with object example</p>       
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+        <!-- Using ngClass as  component method -->
+        <h3 class="text-center">Using ngClass as component method</h3>
+        <p [ngClass]="getClass('mode')">Using ngClass with component method example</p>
+
+    </div>
+</div>
