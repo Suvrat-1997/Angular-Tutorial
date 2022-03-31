@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 ==> app.component.html
 
 
-    <label for="">Enter Date: </label> <br>
     <input type="date" name="start-date" [(ngModel)]="enterDate" > <br> <br>
 
     <input type="submit" value="submit" (click)="getValue()">
@@ -18,25 +17,24 @@ import { Component, OnInit } from '@angular/core';
 enterDate: any;
 today = Date.now();
 
-getValue(){
+getValue() {
 
-// calculation of no. of days between two date 
+    // calculation of no. of days from current date 
 
-// To set two dates to two variables
-var date1 = new Date(this.startDate);
-var date2 = new Date(this.endDate);
+    // To set two dates to two variables
+    var date1 = new Date(this.enterDate);
+    var date2 = new Date(this.today);
 
-// To calculate the time difference of two dates
-var Difference_In_Time = date2.getTime() - date1.getTime();
+    // To calculate the time difference of two dates
+    var Difference_In_Time = date2.getTime() - date1.getTime();
 
-// To calculate the no. of days between two dates
-var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+    // To calculate the no. of days between two dates
+    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 
-console.log(Difference_In_Time);
-console.log(Difference_In_Days);
+    console.log('Difference_In_Time: ', Difference_In_Time);
+    console.log('Difference_In_Days', Difference_In_Days);
 
-
-}
+  }
 
 ==> index.html
 
@@ -65,7 +63,7 @@ export class AppComponent {
 
   getValue() {
 
-    // calculation of no. of days between two date 
+    // calculation of no. of days from current date 
 
     // To set two dates to two variables
     var date1 = new Date(this.enterDate);
